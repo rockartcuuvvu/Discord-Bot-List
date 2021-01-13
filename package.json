@@ -7,22 +7,16 @@
     "start": "node index.js"
   },
   "dependencies": {
-   
     "cheerio": "^0.22.0",
     "discord.js": "^11.4.2",
-    
     "fs": "^0.0.2",
-    
     "moment": "^2.23.0",
     "moment-duration-format": "^2.2.2",
-  
     "node-fetch": "^2.3.0",
     "node-superfetch": "^0.1.9",
-   
     "quick.db": "^7.0.0-b16",
     "request": "^2.88.0",
-    "url": "^0.11.0",
-   
+    "url": "^0.11.0"
   },
   "engines": {
     "node": "8.x"
