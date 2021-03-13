@@ -14,15 +14,18 @@ client.profile = profile
 
 client.settings = {
   "prefix": "c!", //prefix
-  "oauthSecret": "hCeVH3zaAC_7GYf_tsMac8hq9qGEiIaI", // bot secreti
+  "oauthSecret": "ny3FalsuPG9KVz0D_BbVOX-6BHyL232D", // bot secreti
 	"callbackURL": "https://discord4bots.herokuapp.com//callback", // change the urls of my site with "/ callback"!
-	"kayıt": "714504216370085929", // approved, rejected, you have applied, you will write the ID of the channel where the recordings will go
+	"kayıt": "819785448071102465", // approved, rejected, you have applied, you will write the ID of the channel where the recordings will go
   "color": "RANDOM" // get the color of the embeds from here, something like that
 };
 
-client.authorities = ["484010160981934100", "600743415948509216", "343793233815535626", "422456282948042753", "349936436373618689"]// ids of all authorities gelece array // ids of all authorities gelcek array
-client.web_officials = ["484010160981934100", "600743415948509216", "343793233815535626", "422456282948042753","349936436373618689"]// ids of web officials future array
-client.server_authorities = ["484010160981934100", "600743415948509216", "343793233815535626", "422456282948042753","349936436373618689"]// ids of server authorities future array
+client.authorities = ["758272354173845536"
+  ]// ids of all authorities gelece array // ids of all authorities gelcek array
+client.web_officials = ["758272354173845536"
+  ]// ids of web officials future array
+client.server_authorities = ["758272354173845536"
+  ]// ids of server authorities future array
 
 //["id", "id2"]
 
@@ -34,7 +37,7 @@ client.on('ready', async () => {
   
    require("./app.js")(client);
   
-  client.user.setActivity(`${client.settings.prefix}help & Discord4Bots`, { type:"WATCHING" })
+  client.user.setActivity(`${client.settings.prefix}help & DumbotList`, { type:"WATCHING" })
   console.log("Active!")
 });
 
@@ -74,7 +77,7 @@ fs.readdir(`./commands/`, (err, files) => {
 	let jsfiles = files.filter(f => f.split(".").pop() === "js")
 
 	if(jsfiles.length <= 0) {
-		console.log("Discord4Bots! I couldn't find any scripts!")
+		console.log("DumbotList! I couldn't find any scripts!")
 	} else {
 		if (err) {
 			console.error("Error! There is no name or aliases part of a command!")
@@ -150,7 +153,7 @@ client.on("message", async message => {
 		}
 		if (cmd.conf.permLevel === 4) {
 			const x = await client.fetchApplication()
-      var arr = [x.owner.id, '484010160981934100']
+      var arr = [x.owner.id, '758272354173845536']
 			if (!arr.includes(message.author.id)) {
 				const embed = new Discord.RichEmbed()
 					.setDescription(`Your competence is insufficient.`)

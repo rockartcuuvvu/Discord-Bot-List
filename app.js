@@ -410,7 +410,7 @@ let ayar = req.body
 
 if(ayar['mesaj-1']) {
 db.push(`bots.${req.params.botID}.reports`, JSON.parse(`{ "report":"${ayar['mesaj-1']}" }`))
-client.channels.get('715618857946972191').send(`User Name: \`${req.user.username}#${req.user.discriminator}\` Reported bot \`${db.fetch(`bots.${req.params.botID}.name`)}\` For Reason \n**Reason:** \`${ayar['mesaj-1']}\``)
+client.channels.get('819785509592629258').send(`User Name: \`${req.user.username}#${req.user.discriminator}\` Reported bot \`${db.fetch(`bots.${req.params.botID}.name`)}\` For Reason \n**Reason:** \`${ayar['mesaj-1']}\``)
 }
 if(ayar['mesaj-2']) {
 db.push(`bots.${req.params.botID}.reports`, JSON.parse(`{ "report":"${ayar['mesaj-2']}" }`))

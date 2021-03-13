@@ -4,7 +4,7 @@
   <div align="center" class="jumbotron">
        <img src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>.gif?size=512" class="rounded-circle panel">
        <h5 style="color:#fff"><%=user.username%>#<%=user.discriminator%></h5>
-      <h6 style="color:#fff">Your Discord4Bots:</h6>
+      <h6 style="color:#fff">Your DumbotsList:</h6>
   </div>
   
   <% if (bot.ayar.has('bots')) { %>
@@ -55,12 +55,12 @@
       
       <% } else if (!bot.ayar.has(`kbots.${user.id}`)) {%>
            <h5 style="color:#222">
-             Sorry, you didn't add your bot on Discord4Bots!
+             Sorry, you didn't add your bot on DumbotsList!
       </h5>
       <% } %>
       <% } else if (!bot.ayar.has('bots')) {%>
            <h5 style="color:#222">
-             Sorry, you didn't add your bot on Discord4Bots!
+             Sorry, you didn't add your bot on DumbotsList!
       </h5>
       <% } %>
       
